@@ -10,5 +10,5 @@ object MovieDbClient {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val service = retrofit.create(TheMovieDbService::class.java)
+    val service: TheMovieDbService? = retrofit.create(TheMovieDbService::class.java)
 }

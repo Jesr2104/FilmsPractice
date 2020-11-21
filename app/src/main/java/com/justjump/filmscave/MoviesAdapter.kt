@@ -25,7 +25,7 @@ class MoviesAdapter(
         return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: MoviesAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val movie = movies[position]
 
         holder.bind(movie)
@@ -39,7 +39,7 @@ class MoviesAdapter(
 
         fun bind(movie: Movie) {
 
-            binding.Titlefilm.text = movie.title
+            binding.titleFilm.text = movie.title
             Glide
                 .with(binding.root.context)
                 .load("https://image.tmdb.org/t/p/w185/${movie.poster_path}")

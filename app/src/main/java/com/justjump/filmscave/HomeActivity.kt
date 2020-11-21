@@ -20,11 +20,11 @@ class HomeActivity : AppCompatActivity() {
                 .makeText(this@HomeActivity, it.title, Toast.LENGTH_SHORT)
                 .show()
         }
-        binding.Listfilms.adapter = moviesAdapter
+        binding.ListFilms.adapter = moviesAdapter
 
         lifecycleScope.launch {
             val apiKey = getString(R.string.api_key)
-            val listPopularMovies = MovieDbClient.service.listPopularMovies(apiKey)
+            val listPopularMovies = MovieDbClient.service!!.listPopularMovies(apiKey)
             moviesAdapter.movies = listPopularMovies.movieDbs
             moviesAdapter.notifyDataSetChanged()
         }
