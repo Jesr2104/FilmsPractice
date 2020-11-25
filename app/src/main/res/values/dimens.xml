@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    font sizes    -->
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="regular_text_size">12sp</dimen>
+    <dimen name="tile_text_size">20sp</dimen>
+    <dimen name="big_title_text_size">40sp</dimen>
+
+    <!--    corner for element    -->
+    <dimen name="corner_text_inputs">15dp</dimen>
+    <dimen name="corner_buttons">15dp</dimen>
+
+    <!--    elevations for element    -->
+    <dimen name="elevation_buttons">10dp</dimen>
+
+</resources>
