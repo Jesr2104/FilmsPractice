@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FilmsCave</string>
+    <string name="prefs_login">SaveLogin</string>
 </resources>

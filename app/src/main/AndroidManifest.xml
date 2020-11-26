@@ -13,7 +13,7 @@
         <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".HomeActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainAuth"
             android:theme="@style/splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

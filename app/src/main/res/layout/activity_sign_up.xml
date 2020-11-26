@@ -40,6 +40,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NickNameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User Name"
@@ -64,6 +65,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmailText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -88,6 +90,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PasswordText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -117,7 +120,7 @@
         app:layout_constraintTop_toTopOf="@id/switch_SavePassword"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/LogInButton"
+        android:id="@+id/SignUpButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Sign Up"
@@ -129,5 +132,53 @@
         app:layout_constraintTop_toBottomOf="@+id/switch_SavePassword"
         app:cornerRadius="@dimen/corner_buttons"
         android:elevation="@dimen/elevation_buttons"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/cardViewFacebook"
+        app:layout_constraintStart_toStartOf="@+id/SignUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpButton">
+
+        <ImageView
+            android:id="@+id/SignUpGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google"
+            android:contentDescription="SignUpGoogle" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/SignUpButton"
+        app:layout_constraintStart_toEndOf="@+id/cardViewGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpButton">
+
+        <ImageView
+            android:id="@+id/SignUpFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription="SignUpFacebook" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
