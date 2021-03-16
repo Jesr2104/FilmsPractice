@@ -14,7 +14,7 @@ class MainAuth : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         //load the theme
-        setTheme(R.style.Theme_FilmsCave)
+        setTheme(R.style.Theme_appFilmsPractice)
 
         super.onCreate(savedInstanceState)
         val binding = ActivityAuthBinding.inflate(layoutInflater)
